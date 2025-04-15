@@ -8,7 +8,7 @@
 
 ## ✅ Funzionalità principali
 
-- 📍 Elenco dei parchi naturali con descrizione, posizione e immagini
+- 📍 Mappa dei parchi naturali con descrizione, posizione e immagini
 - ⭐ Sistema di valutazione da 1 a 5 stelle
 - 📝 Creazione e gestione delle **recensioni utenti**
 - 🔐 Autenticazione e registrazione degli utenti
