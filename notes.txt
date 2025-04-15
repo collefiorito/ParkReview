@@ -1,0 +1,5 @@
+struttura template mono tabella
+bootstrap framework -> ccomponents ->
+html, css, python/bootstrap: template tutti insieme
+
+
