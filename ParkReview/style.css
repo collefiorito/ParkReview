@@ -1,0 +1,187 @@
+/* RESET e STILE GENERALE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 50px; /* Per evitare che il contenuto venga coperto dalla navbar */
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #4caf50;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c8facc;
+}
+
+/* Sezioni */
+section {
+  padding: 3rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+  margin-top: 70px; /* Per lasciare spazio al menu fisso */
+}
+
+section h2, section h3 {
+  font-size: 2.5rem;
+  color: #2e4a31;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #544f4f;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: #66bb6a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #43a047;
+}
+
+/* Sezione Aggiungi Recensione */
+#aggiungi-recensione {
+  background-color: #ffffff; /* uguale alle altre sezioni */
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 2px solid #f0c000;
+  border-bottom: 2px solid #f0c000;
+}
+
+.aggiungi-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#aggiungi-recensione h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#aggiungi-recensione p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.aggiungi-button {
+  display: inline-block;
+  background-color: #ffcc00; /* bottone giallo */
+  color: #000;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.aggiungi-button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Hero */
+.hero {
+  height: 300px;
+  background: url('img/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #388e3c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .aggiungi-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
