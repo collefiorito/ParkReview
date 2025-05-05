@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Parchi di Roma{% endblock %}
+
+{% block content %}
+<section class="hero-section py-5">
+    <div class="container text-center">
+        <h1 class="display-3 hero-title">
+            Parchi Naturali di Roma
+        </h1>
+        <p class="lead fs-4 mt-3">Scopri e recensisci i più bei parchi della Capitale</p>
+        <div class="mt-4">
+            <button class="btn btn-light btn-lg mx-2">Esplora i Parchi</button>
+            <button class="btn btn-success btn-lg mx-2">Scrivi Recensione</button>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-map-marked-alt fa-3x text-success"></i>
+                    </div>
+                    <h5 class="card-title">📍 Mappa dei Parchi</h5>
+                    <p class="card-text">Esplora i parchi naturali di Roma con descrizioni dettagliate, posizione e immagini.</p>
+                    <a href="#" class="btn btn-outline-success">Visualizza Mappa</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-star fa-3x text-success"></i>
+                    </div>
+                    <h5 class="card-title">⭐ Recensioni</h5>
+                    <p class="card-text">Condividi la tua esperienza e leggi le opinioni degli altri visitatori.</p>
+                    <a href="#" class="btn btn-outline-success">Scrivi Recensione</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-compass fa-3x text-success"></i>
+                    </div>
+                    <h5 class="card-title">🧭 Cerca Parchi</h5>
+                    <p class="card-text">Trova facilmente i parchi per nome o quartiere di Roma.</p>
+                    <a href="#" class="btn btn-outline-success">Inizia Ricerca</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Reviews Section -->
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Ultime Recensioni</h2>
+        <div class="row g-4">
+            <!-- Placeholder for recent reviews -->
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Villa Borghese</h5>
+                        <div class="text-warning mb-2">★★★★★</div>
+                        <p class="card-text">Un'oasi verde nel cuore di Roma...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

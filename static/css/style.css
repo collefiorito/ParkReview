@@ -1,0 +1,171 @@
+:root {
+    --primary-green: #2E7D32;
+    --light-green: #4CAF50;
+    --dark-green: #1B5E20;
+    --primary-font: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    --heading-font: 'Inter', system-ui, sans-serif;
+}
+
+/* Base Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-green);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-title {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.2s;
+}
+
+/* Components */
+.btn-green {
+    background-color: var(--primary-green);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.card {
+    transition: transform 0.2s;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(27, 94, 32, 0.9)),
+                url('../images/roma-parks-bg.jpg') center/cover;
+    color: white;
+    padding: 6rem 0;
+}
+
+.hero-title {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    position: relative;
+}
+
+.footer-logo {
+    transition: opacity 0.2s;
+}
+
+.footer-logo:hover {
+    opacity: 0.8;
+}
+
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #a3a3a3;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.footer-logo {
+    height: 45px;
+    width: auto;
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-green) !important;
+    transform: translateY(-3px);
+}
+
+.text-light-emphasis {
+    color: #a3a3a3;
+}
+
+/* Card Styles */
+.card-title {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .logo-container {
+        display: none;
+    }
+    .site-title {
+        font-size: 1.8rem;
+    }
+}

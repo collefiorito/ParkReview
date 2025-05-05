@@ -1,0 +1,26 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand site-title" href="/">ParkReview</a>
+        <div class="logo-container">
+            <img src="{% static 'images/roma-capitale-logo.png' %}" alt="Roma Capitale" class="logo-img">
+            <img src="{% static 'images/eu-logo.png' %}" alt="European Union" class="logo-img">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/mappa/' %}active{% endif %}" href="{% url 'mappa' %}">Mappa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/recensioni/' %}active{% endif %}" href="{% url 'recensioni' %}">Recensioni</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

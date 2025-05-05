@@ -1,0 +1,57 @@
+{% load static %}
+<footer class="footer mt-auto py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-tree me-2"></i>ParkReview
+                    </h5>
+                    <p class="text-light-emphasis mb-3">Scopri e recensisci i più bei parchi della Capitale. La tua guida verde nel cuore di Roma.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-section">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-compass me-2"></i>Link Utili
+                    </h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/" class="text-decoration-none"><i class="fas fa-home me-2"></i>Home</a></li>
+                        <li><a href="/mappa" class="text-decoration-none"><i class="fas fa-map-marked-alt me-2"></i>Mappa</a></li>
+                        <li><a href="/recensioni" class="text-decoration-none"><i class="fas fa-star me-2"></i>Recensioni</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-12">
+                <div class="footer-section">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-handshake me-2"></i>Partner Istituzionali
+                    </h5>
+                    <div class="partner-logos d-flex justify-content-start align-items-center gap-4">
+                        <img src="{% static 'images/roma-capitale-logo.png' %}" alt="Roma Capitale" class="footer-logo">
+                        <img src="{% static 'images/eu-logo.png' %}" alt="European Union" class="footer-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="border-secondary my-4">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0 text-light-emphasis">&copy; 2025 Parchi di Roma. Tutti i diritti riservati.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-light-emphasis text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light-emphasis text-decoration-none">Termini di Servizio</a>
+            </div>
+        </div>
+    </div>
+</footer>
