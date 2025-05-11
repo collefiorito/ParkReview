@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrivi una Recensione - ParkReview</title>
+    <link rel="stylesheet" href="recensione.css">
+
+</head>
+<body>
+<header>
+    <h1>ParkReview</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="mappe.html">Mappa</a>
+        <a href="recensioni.html">Recensioni</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Scrivi una Recensione</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="parco">Parco:</label>
+        <input type="text" id="parco" name="parco" required>
+
+        <label for="voto">Voto (1-5):</label>
+        <select id="voto" name="voto">
+            <option value="5">5 - Eccellente</option>
+            <option value="4">4 - Ottimo</option>
+            <option value="3">3 - Buono</option>
+            <option value="2">2 - Sufficiente</option>
+            <option value="1">1 - Scarso</option>
+        </select>
+
+        <label for="commento">Commento:</label>
+        <textarea id="commento" name="commento" rows="5"></textarea>
+
+        <label for="immagine">Carica un'immagine:</label>
+        <input type="file" id="immagine" name="immagine">
+
+        <label for="posizione">Posizione sulla mappa:</label>
+        <input type="text" id="posizione" name="posizione" placeholder="Inserisci coordinate o indirizzo">
+
+        <button type="submit">Invia Recensione</button>
+    </form>
+</div>
+
+<footer>
+    © 2025 ParkReview - Tutti i diritti riservati
+</footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+Ti ho fatto le pagine che mancavano del sito.
+Riassunto:
+-Ogni pagina html ha un file css indipendente per sé, cosí che non interferiscono con la pagina principale index.html che hai creato tu.
+-Collega nel menú in alto a destra della tua pagina le pagine che ho creato io, facendo in modo che una volta che ci premi ti porta.
+-Purtroppo non sono riuscito a creare una mappa unica ma ogni parco ha la sua mappa.
+-Le foto in teoria si dovrebbero collegare in automatico perché le ho chiamate uguali a quelle che stanno su GitHub.
+
+
+Ora la cosa piú importante sarebbe fare in modo che quando una persona aggiunge una recensione va a finire su recensioni.html e dovresti farlo tu collegando le pagine al back end di Django che avevi fatto a casa.
+
+Fine
+
